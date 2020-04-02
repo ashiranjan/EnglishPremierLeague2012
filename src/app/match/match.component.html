@@ -1,0 +1,28 @@
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Teams</th>
+        <th scope="col">Total Matches</th>
+        <th scope="col">Won</th>
+        <th scope="col">Lost</th>
+        <th scope="col">Ties</th>
+        <th scope="col">Total Goals Scored For</th>
+        <th scope="col">Total Goals Scored Against</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of tableData">
+        
+        <td>{{data.teamName}}</td>
+        <td>{{data.totalmatches}}</td>
+        <td>{{data.totalWon}}</td>
+        <td>{{data.totalLost}}</td>
+        <td>{{data.totalTies}}</td>
+        <td>{{data.totalScoreFor}}</td>
+        <td>{{data.totalScoreAgainst}}</td>
+      </tr>
+      
+      
+    </tbody>
+  </table>
+ 
