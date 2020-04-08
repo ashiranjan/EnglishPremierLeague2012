@@ -1,4 +1,6 @@
-<table class="table table-striped">
+<div class="container-fluid">
+  <h4>Matches Chart</h4>
+<table class="table table-striped table-bordered">
     <thead>
       <tr>
         <th scope="col">Teams</th>
@@ -25,4 +27,11 @@
       
     </tbody>
   </table>
- 
+
+  <h4>Bubble Chart</h4>
+  <div *ngIf ="chart">
+
+    <canvas id ="canvas">{{chart}}</canvas>
+  </div>
+</div>
+  
